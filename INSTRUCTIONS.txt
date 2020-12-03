@@ -1,0 +1,45 @@
+NOTE: if phpmyadmin received an error about the size of the database, just adjust it to your PHP.INI
+FIND THIS TEXT memory_limit, post_max_size and upload_max_filesize, just adjust it to 
+memory_limit = 512M
+post_max_size = 80M
+upload_max_filesize = 200M.
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+project used: html, php, javascript, sql, jquery,bootstrap and offline made/online css package.
+
+/////////////////////////////////////////////////////////////////////////////////////
+			--Flow of the System--
+
+
+in this system, there have only three (3) user level (STUDENT, TEACHER, REGISTRAR).
+once you register on this system you automatically be the registrar. after you log-in first you must notice that every button is disabled except for the ADD COURSE button. to start with, you must add a course by pressing the ADD COURSE button, as i working on it i encounter a little problem about bugs, by solving this, you must press and choose on the calendar button in the Year Commenced textbox.
+
+ATTENTION: Course Credit Point textbox is the over all Course Credit of the Course.
+
+after you Add the Course you can now able to Add a Subject, before you choose a course there is the total credit Textbox that actually link to the Choose Course Textbox. if you try to choose a course the actual total credit of the course will going to display. so that you can base what subject pre requisit credits you will put in every subject. after you add every subject, the system will determine if the overall subject credit will be greater than the total Course Credit, if it will be true, all of the subject credit will reset and will start to blank.
+
+also there is a bugs on the date so try to press and choose from the logo 
+
+as you will done on adding a subject, then you ready to add your teacher, as the ratio 1 teacher is is to one course (1 teacher: 1 course), after you fill up the form you must press the fetch button to get and display the assigning list of subject that the teacher will teach.
+
+ATTENTION: You must only choose the subject that the teacher will teach where it is only present in the certain Course year and Course sem,
+
+after you add your teacher you can now add your students. by pressing the add button, the form will be pop up. you must only fetch the subject as only designated by your course year and sem. also as i said, there is a bugs on the date part, so please pick it on the small calendar icon. after you input all of the textbox, now fetch the info as you can see the first thing will pop up is the teacher course if you will going to click it again, the list of subject that will you take will be appear.
+
+ATTENTION: You can only choose the Year and sem as it will only available on the course.
+
+after you add all the necessary data, you can now able to rate the Student Grades. by login as a Teacher account, use the username and password that you input it in the ADD TEACHER module, inside the teacher module you can select the enrolled students under the TEACHER supervision/class. if the teacher will select a student it can now fetch the data and display all the info of the students and the student subjects. you can rate it now by using a Letter ranking or number ranking as stated in the table. after you fetch and rate the student, now you can able to submit the grade.
+
+ATTENTION: if the teacher done rate the student and can`t now able to fetch the student subject info. it because the registrar need to confirm and choose if the student will take a retake or will proceed to the next course/sem. but if the registrar is not done by choosing whether retake or proceed of students status. the student can able to see the status of her subject herself.
+
+if the student wants to show her grades, he/she can login as a student by using his/her username and password that inputed by the registrar.
+
+after the teacher rank the student. if the registrar decide to pass or fail the student, the registrar now can able used the student proceed module.
+
+you can choose a course first, if the course is already chooses the total course credit will automatically popup in the total course credit area, after that choose your student, i suggest that the you must slowly triple click the student name textbox to fetch it all easlly
+after all the textbox is fill in automatically, you can now fetch the info of the students. if you will press the fetch it will automatically generate all the subject of the student that being rank by their advicer. you can choose by the two if you want to make him/her retake the exam or to finish the course subject.
+
+ATTENTION: some of the student that you will choose and if you try to fetch it and it will pop up nothing, it is because the teacher is not done in remarking the subject yet.
+
+if the student is passed all the 4 years Course, the System will automatically transfer the student to Student Graduated Module, in the Student Graduated Module you can see all the list of student graduate. 

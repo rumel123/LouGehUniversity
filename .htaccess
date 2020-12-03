@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^Lou-Geh-University\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.Lou-Geh-University\.com$
+RewriteRule ^/?$ "https\:\/\/www\.Lou-Geh-University\.com\/" [R=301,L]
+################################################################################
+ErrorDocument 404 /Lou-Geh-University/main-404.php
+
+
+
+RewriteRule ^Sign-in?$ index.php [NC]
+RewriteRule ^Register?$ Register.php [NC]
+RewriteRule ^Home?$ home.php [NC]
+RewriteRule ^student-DashBoard?$ student-dashboard.php [NC]
+RewriteRule ^Teacher-DashBoard?$ Teacher-Dashboard.php [NC]
+RewriteRule ^Welcome?$ main-landing.php [NC]
